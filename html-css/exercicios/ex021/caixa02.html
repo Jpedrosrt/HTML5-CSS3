@@ -18,16 +18,24 @@
             margin: 0px;
         }
 
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+        }
+
         nav {
             background-color: rgb(63, 63, 63);
             padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.404);
+            /* 
+            box-shadow: 5px(deslocamento horizontal) 3px(deslocamento vertical) 7px(espalhamento) black(sombra)
+            */
         }
 
         nav > a {
             text-decoration: none;
             color: white;
             font-weight: bold;
-
+            margin-right: 30px;
         }
 
         nav > a:hover {
@@ -38,6 +46,8 @@
             background-color: white;
             padding: 10px;
             margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479);
         }
 
         article {
@@ -53,8 +63,24 @@
             background-color: black;
             color: white;
             text-align: center;
-            padding: 1px;
+            padding: 4px;
             margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        div#bola:hover {
+            background-color: red;
         }
     </style>
 </head>
@@ -89,5 +115,6 @@
     <footer>
         <p>Desenvolvido por Jp</p>
     </footer>
+    <div id="bola"></div>
 </body>
 </html>
